@@ -1,0 +1,25 @@
+name: Bug report
+description: Report a reproducible problem in the local workflow
+title: "[bug] "
+labels: [bug]
+body:
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Include a minimal command and sanitized input description.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python version, optional backend, and test output. Do not include keys or private paths.
+    validations:
+      required: true

@@ -198,6 +198,14 @@ KartaView, Panoramax, Mapillary and Baidu adapters preserve source/licence prove
 Mapillary and Baidu require credentials in environment variables. The tool
 does not scrape map tiles or social platforms. See
 `docs/STREETVIEW_PROVIDERS.md` for coverage and authorization details.
+
+## Contributing
+
+Contributions are welcome through Issues and pull requests. Start with
+[CONTRIBUTING.md](CONTRIBUTING.md); the repository includes CI, issue forms and
+a pull-request checklist. Keep personal photos, exact private coordinates,
+provider credentials, model weights and downloaded reference data out of
+commits.
 输出是带中心、半径、支持图片和冲突状态的候选范围；只有经过获准留出集校准和独立证据核验后，才可以升级为已验证定位。
 
 ## 基准评估
