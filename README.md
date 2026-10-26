@@ -1,4 +1,25 @@
-# 本地照片地理隐私审计
+# Photo Privacy Audit / 本地照片地理隐私审计
+
+[![Tests](https://github.com/jumbokun/photo-privacy-audit/actions/workflows/test.yml/badge.svg)](https://github.com/jumbokun/photo-privacy-audit/actions/workflows/test.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+Privacy-first, local-first tooling for photo metadata auditing and authorized
+image geolocation research. The project separates ordinary privacy reports
+from research-mode geolocation, records data/model provenance, and refuses to
+turn visual similarity into an exact private-address claim.
+
+This is an active research project. The most useful contributions are new
+authorized reference providers, balanced city-level benchmarks, stronger
+visual-place-retrieval models, and reproducible failure analyses. See
+[CONTRIBUTING.md](CONTRIBUTING.md), open an Issue, or start a Discussion.
+
+### Current research milestone
+
+On a local German test photo with equal-size reference galleries for nine
+neighboring cities, DINOv2 and SigLIP both ranked the correct city in their top-20
+references. A later spatial-grid audit exposed a concentrated-gallery false
+match, which is intentionally documented as a failure case rather than hidden.
+The project is designed to make these limitations measurable.
 
 这是一个离线、可复现的照片隐私审计工作流。它把个人照片审计和公开基准模型评估分开：个人照片只做元数据、人工视觉线索和跨帖重复性审计；地理定位模型只接受明确获准、带真值的基准预测结果。
 
