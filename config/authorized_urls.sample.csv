@@ -1,0 +1,2 @@
+asset_id,url,lat,lon,license,authorization_status,source,dataset
+replace-001,https://example.org/authorized-image.jpg,29.5630,106.5516,CC-BY,authorized,owner-export,chongqing-reference-v1

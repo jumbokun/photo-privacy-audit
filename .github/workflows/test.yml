@@ -1,0 +1,29 @@
+name: photo-privacy-audit
+
+on:
+  push:
+    paths:
+      - "photo-privacy-audit/**"
+  pull_request:
+    paths:
+      - "photo-privacy-audit/**"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.13"]
+    defaults:
+      run:
+        working-directory: photo-privacy-audit
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: photo-privacy-audit/requirements-dev.txt
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python -m compileall -q src audit.py
+      - run: python -m pytest -q

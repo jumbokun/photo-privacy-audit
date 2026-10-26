@@ -1,0 +1,2 @@
+query_id,lat,lon,radius_m,min_lon,min_lat,max_lon,max_lat
+chongqing-main-city,29.60,106.50,5000,106.30,29.40,106.70,29.80

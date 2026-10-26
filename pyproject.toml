@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "photo-privacy-audit"
+version = "0.1.0"
+description = "Offline photo privacy auditing and isolated geolocation evaluation"
+requires-python = ">=3.11"
+dependencies = ["Pillow==13.0.0", "PyYAML==6.0.3", "tzdata==2026.4"]
+
+[project.scripts]
+photo-audit = "photo_audit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

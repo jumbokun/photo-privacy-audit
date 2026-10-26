@@ -1,0 +1,16 @@
+version: 1
+locale: zh-CN
+timezone: Asia/Shanghai
+network_mode: offline
+near_duplicate_hamming: 6
+max_images: 5000
+max_pixels: 60000000
+max_file_mb: 150
+post_time_window_hours: 24
+# The scores rank review priority; they are not probabilities.
+metadata_scores:
+  gps: 4
+  serial: 3
+  timestamp: 2
+  device: 1
+  opaque_metadata: 2

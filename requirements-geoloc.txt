@@ -1,0 +1,9 @@
+# Optional local research-mode dependencies. Install torch separately for the
+# target CUDA build; do not let this file replace the privacy-audit base env.
+transformers==4.57.1
+huggingface_hub==0.36.0
+safetensors==0.7.0
+rapidocr_onnxruntime==1.2.3
+geoclip==1.3.0
+shapely==2.1.2
+requests==2.32.5

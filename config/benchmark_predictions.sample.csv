@@ -1,0 +1,2 @@
+asset_id,true_lat,true_lon,pred_lat,pred_lon,topk_json,confidence
+query-001,50.100000,8.600000,50.100500,8.601000,"[[50.1005,8.601],[50.0,8.5]]",0.75

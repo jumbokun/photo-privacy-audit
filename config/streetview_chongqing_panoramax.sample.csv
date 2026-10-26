@@ -1,0 +1,2 @@
+query_id,lat,lon,radius_m,min_lon,min_lat,max_lon,max_lat
+chongqing-central-cell,29.56,106.55,5000,106.40,29.40,106.70,29.70
